@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sklep Paintball - markery, maski paintball, kulki paintball, sprzęt do paintball, odzież do paintballa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div id='infoBar'>
+        <ul>
+            <li><i class="fas fa-phone"></i>Tel: +48 517 989 511</li>
+            <li><i class="fas fa-envelope"></i>E-mail: sklep@assassins-arms.com</li>
+            <li><i class="fab fa-facebook-f"></i>assassinarms</li>
+        </ul>
+    </div>
+    <div id='topBarBackground'>
+        <div id="topBarContent">
+            <div id='topBar'>
+                <div id='mainField'>
+                    <div id='logoBar'>
+                        <div id='logoContainer'>
+                            <a href="#">
+                                <img id='logo-full' src='https://assassins-arms.com/skins/basic/customer/images/logo.png' alt="Assassins Arms Shop">
+                            </a>
+                            <a href="#">
+                                <img id='logo-mobile' src='./graphics/logo.png' alt="Assassins Arms Shop">
+                            </a>
+                        </div>
+                            <form class="searchBar" action="action_page.php">
+                                <input type="text" placeholder="Szukaj..." name="search">
+                                <button id='searchButton' type="submit"><i class="fa fa-search"></i></button>
+                                <button id='showButton' type="button" onclick='showSearch()'><i class="fa fa-search"></i></button>
+                            </form>
+                        <div id='language'>
+                            <div class='dropdown'>
+                                <button class='dropbtn' >
+                                    PL 
+                                    <img src='./graphics/iconfinder_flag-poland_748114.png'>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">
+                                        EN
+                                        <img src='./graphics/iconfinder_flag-united-kingdom_748024.png'>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='account'>
+                            Moje konto
+                        </div>
+                        <div id='cart'>
+                            Koszyk
+                        </div>
+                    </div>
+                    <div id='menuBar'>
+                        <nav>
+                            <div class="dropdown">
+                                <button class="dropbtn">GOTOWE ZESTAWY DO GRY  <i class="fas fa-chevron-down"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">SPRZĘT  <i class="fas fa-chevron-down"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">ODZIEŻ  <i class="fas fa-chevron-down"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">KULKI</button>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">WYPRZEDAŻE</button>
+                            </div>
+                        </nav>
+                    </div>
+                    <div id='location'>
+                        <p>Somewhere > Somewhere else </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='page'>
+        <div id='mainProduct'>
+            <div id='productPhoto'>
+                <p>Foto</p>
+            </div>
+            <div id='productOptions'>
+                <p>Tutaj będzie dużo opcji produktu</p>
+            </div>
+        </div>
+            <div id='productSuggestions'>
+                <h2>Dobierz do zestawu</h2>
+                <div id='additionalProducts'>
+                    <div class='product'>
+
+                    </div>
+                    <div class='product'>
+
+                    </div>
+                    <div class='product'>
+
+                    </div>
+                </div>
+            </div>
+        <div id='midPage'> 
+            <div id='midPageLeft'>
+                <div id='productInfo'>
+                    <p>Informacje o produkcie</p>
+                </div>
+                <div id='FAQ'>
+                    <h2>Nasi klienci pytali nas o</h2>
+                    <p>różne rzeczy</p>
+                </div>
+            </div>
+            <div id='midPageRight'>
+                <div id='banner'>
+                    <h1>Banner</h1>
+                    <p>Usługi serwisowe</p>
+                </div>
+            </div>
+        </div>
+        <div id='lowerPage'>
+            <h2>Porady naszego eksperta</h2>
+            <div id='articlesContainer'>
+                <div class='article'>
+                    <p>Artykuł 1</p>
+                </div>
+                <div class='article'>
+                    <p>Artykuł 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id='footer'>
+            <p>Footer</p>
+        </div>
+    <script src='.\node_modules\jquery\dist\jquery.min.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
