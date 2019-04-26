@@ -9,6 +9,7 @@ body {
 /* ===== Main Bar ===== */
 #topBarContent {
     margin: auto;
+    user-select: none;
 }
 
 #topBarBackground {
@@ -85,7 +86,6 @@ form.searchBar button {
   float: left;
   width: 50px;
   padding: 13px;
-
   background: #383838;
   color: white;
   font-size: 17px;

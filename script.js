@@ -10,5 +10,5 @@ $('#language').hover(function() {
 });
 
 $('#menuBar .dropbtn').hover(function () {
-    $(this).children('.dropdown-content').slideToggle(200).show();
+    $(this).next('.dropdown-content').stop(true, false, true).slideToggle(200);
 });
