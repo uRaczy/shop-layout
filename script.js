@@ -5,10 +5,6 @@ const showSearch = () => {
     $('form.searchBar #searchButton').css('display', 'block');
 }
 
-$('#language').hover(function() {
-    $('#language .dropdown').children('.dropdown-content').slideToggle(200);
-});
-
-$('#menuBar .dropbtn').hover(function () {
-    $(this).next('.dropdown-content').stop(true, false, true).slideToggle(200);
+$('.dropdown').hover(function () {
+    $(this).children('.dropdown-content').stop(true, false, true).slideToggle(200);
 });
