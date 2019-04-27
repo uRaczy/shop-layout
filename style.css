@@ -70,6 +70,13 @@ body {
   align-items: center;
 }
 
+.menuToggle {
+  float: right;
+  align-self: center;
+ font-size: 2em;
+ display: none;
+}
+
 
 /* === Search tool === */
 form.searchBar input[type=text] {
@@ -281,6 +288,32 @@ form.searchBar::after {
     #location {
       display: none;
     }
+
+    #menuBar {
+      display: none;
+    }
+
+    #menuBar .dropdown {
+      display: inline-flex;
+      justify-content: center;
+      background-color: lightgrey;
+      width: 100%;
+    }
+
+    #menuBar .dropdown-content {
+      position: relative;
+      width: 100%;
+    }
+
+
+    .menuToggle {
+      display: block;
+      padding: 5px;
+      background: lightgrey;
+      color: grey;
+      border-radius: 5px;
+    }
+
 
     /*  == Page Content  == */
     #mainProduct {

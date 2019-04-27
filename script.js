@@ -6,5 +6,15 @@ const showSearch = () => {
 }
 
 $('.dropdown').hover(function () {
-    $(this).children('.dropdown-content').stop(true, false, true).slideToggle(200);
+    if ($(document).width() > 800) {
+    $(this).children('.dropdown-content').stop(true, false, true).slideToggle(200);}
+});
+
+$('.menuToggle').click(function() {
+    $('#menuBar').slideToggle(200);
+});
+
+$('.dropdown').click(function () {
+    if ($(document).width() < 800) {
+    $(this).children('.dropdown-content').stop(true, false, true).fadeToggle(100);}
 });
