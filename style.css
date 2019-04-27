@@ -7,22 +7,22 @@ body {
 }
 
 /* ===== Main Bar ===== */
-#topBarContent {
+.topBarContent {
     margin: auto;
     user-select: none;
 }
 
-#topBarBackground {
+.topBarBackground {
   width: 100%;
   background-image: url('./graphics/TopBarBackground.png');
 }
 
-#infoBar i {
+.infoBar i {
     color: rgb(177, 0, 0);
     margin-right: 15px;
 }
 
-#infoBar, #infoBar > ul {
+.infoBar, .infoBar > ul {
     display: inline-flex;
     list-style-type: none;
     background-color: rgb(32, 32, 32);
@@ -32,7 +32,7 @@ body {
     justify-content: space-around;
 }
 
-#logoBar {
+.logoBar {
     width: 100%;
     height: 100px;
     font-weight: 600;
@@ -42,16 +42,16 @@ body {
     justify-content: space-between;
 }
 
-#logoContainer {
+.logoContainer {
     align-self: center;
     margin-left: 15px;
 }
 
-#logo-mobile {
+.logo-mobile {
   display: none;
 }
 
-#menuBar {
+.menuBar {
   display: inline-flex;
   align-items: center;
   height: auto;
@@ -59,13 +59,13 @@ body {
   background-color: white;
 }
 
-#language img {
+.language img {
   margin-right: 3px;
   height: 0.9em;
   width: auto;
 }
 
-#location {
+.location {
   display: flex;
   align-items: center;
 }
@@ -159,41 +159,41 @@ form.searchBar::after {
     background-color: #ddd;
   }
 
-  #language .dropdown-content {
+  .language .dropdown-content {
     min-width: 90px;
   }
 
 /* =====Main page===== */
 
 /*  Upper Page */
-#page {
+.page {
   margin: auto;
 }
 
-#mainProduct {
+.mainProduct {
   display: inline-flex;
   flex-direction: row;
   width: 100%;
   height: 400px;
 }
 
-#productPhoto {
+.productPhoto {
   width: 55%;
   border: 1px solid black;
 }
 
-#productOptions{
+.productOptions{
   width: 45%;
   border: 1px solid black;
 }
 
-#productSuggestions {
+.productSuggestions {
   border: 1px solid black;
   width: 100%;
   height: auto;
 }
 
-#additionalProducts {
+.additionalProducts {
   display: inline-flex;
   justify-content: center;
   width: 100%;
@@ -207,44 +207,44 @@ form.searchBar::after {
 }
 
 /* Mid page */
-#midPage {
+.midPage {
   display: inline-flex;
   width: 100%;
   height: 600px;
   border: 1px solid black;
 }
 
-#midPageLeft {
+.midPageLeft {
   width: 60%;
   border: 1px solid blue;
 }
 
-#midPageRight{
+.midPageRight{
   width: 40%;
   border: 1px solid red;
 }
 
 /* Lower page */
-#lowerPage {
+.lowerPage {
   display: block;
   width: 100%;
   border: 1px solid black;
 }
 
-#articlesContainer {
+.articlesContainer {
   display: inline-flex;
   width: 100%;
   height: 200px;
 }
 
-#articlesContainer .article {
+.articlesContainer .article {
   width: 50%;
   border: 1px solid black;
 }
 
 /* ===== Footer  ===== */
 
-#footer {
+.footer {
   border: 1px solid black;
   height: 200px;
 }
@@ -254,20 +254,20 @@ form.searchBar::after {
   /* Mobile */
   @media only screen and (max-width: 800px) {
     /* Upper bar */
-    #infoBar {
+    .infoBar {
       display: none;
     }
-    #logoBar {
+    .logoBar {
       height: auto;
       justify-content: space-between;
       display: flex;
       flex-wrap: wrap;
     }
 
-    #logo-full {
+    .logo-full {
       display: none;
     }
-    #logo-mobile {
+    .logo-mobile {
       display: flex;
       height: 80px;
       width: auto;
@@ -277,30 +277,30 @@ form.searchBar::after {
       display: none;
     }
 
-    form.searchBar #searchButton {
+    form.searchBar .searchButton {
       display: none;
     }
 
-    form.searchBar #showButton {
+    form.searchBar .showButton {
       display: block;
     }
 
-    #location {
+    .location {
       display: none;
     }
 
-    #menuBar {
+    .menuBar {
       display: none;
     }
 
-    #menuBar .dropdown {
+    .menuBar .dropdown {
       display: inline-flex;
       justify-content: center;
       background-color: lightgrey;
       width: 100%;
     }
 
-    #menuBar .dropdown-content {
+    .menuBar .dropdown-content {
       position: relative;
       width: 100%;
     }
@@ -316,15 +316,15 @@ form.searchBar::after {
 
 
     /*  == Page Content  == */
-    #mainProduct {
+    .mainProduct {
       display: block;
     }
 
-    #productPhoto {
+    .productPhoto {
       width: 100vw;
     }
 
-    #productOptions {
+    .productOptions {
       width: 100vw;
     }
 
@@ -335,7 +335,7 @@ form.searchBar::after {
 @media only screen and (min-width: 801px) and (max-width: 1300px) {
 
     /* search field */
-    form.searchBar #showButton {
+    form.searchBar .showButton {
       display: none;
     }
 
@@ -344,18 +344,18 @@ form.searchBar::after {
 
    /* Screen 1300+ */
    @media only screen and (min-width: 1301px) {
-    #topBarContent {
+    .topBarContent {
       width: 60vw;
       margin: auto;
   }
 
-  #page {
+  .page {
     width: 60vw;
     margin: auto;
   }
 
   /* search field */
-  form.searchBar #showButton {
+  form.searchBar .showButton {
     display: none;
   }
 
