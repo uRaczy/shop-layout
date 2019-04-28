@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <div id='infoBar'>
+    <div class='infoBar'>
         <ul>
             <li><i class="fas fa-phone"></i>Tel: +48 517 989 511</li>
             <li><i class="fas fa-envelope"></i>E-mail: sklep@assassins-arms.com</li>
@@ -24,7 +24,7 @@
                     <div class='logoBar'>
                         <div class='logoContainer'>
                             <a href="#">
-                                    <img class='logo-full' src='https://assassins-arms.com/skins/basic/customer/images/logo.png' alt="Assassins Arms Shop">
+                                    <img class='logo-full' src='https://assassins-arms.com/data/gfx/mask/pol/logo_1_big.png' alt="Assassins Arms Shop">
                             </a>
                             <a href="#">
                                     <img class='logo-mobile' src='./graphics/logo.png' alt="Assassins Arms Shop">
@@ -51,23 +51,29 @@
                                 </div>
                         </div>
                         <div class='account'>
-                            Moje konto
+                            <a href="#">
+                                <span class="menu-text">Moje konto</span>
+                                <i class="fas fa-user"></i>
+                            </a>
                         </div>
                         <div class='cart'>
-                            Koszyk
+                            <a href="#">
+                                    <span class="menu-text">Koszyk</span>
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
                         </div>
                         <div class="menuToggle"><i class="fas fa-bars"></i></div>
                     </div>
                     <div class='menuBar'>
                         <nav>
                             <div class="dropdown">
-                                        <div class="dropbtn">SPRZĘT  <i class="fas fa-chevron-down"></i></div>
-                                            <div class="dropdown-content">
-                                                    <a href="#">Link 1</a>
-                                                    <a href="#">Link 2</a>
-                                                    <a href="#">Link 3</a>
-                                            </div>
-                            </div>
+                                    <div class="dropbtn">GOTOWE ZESTAWY DO GRY  <i class="fas fa-chevron-down"></i></div>
+                                        <div class="dropdown-content">
+                                                <a href="#">Link 1</a>
+                                                <a href="#">Link 2</a>
+                                                <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
                             <div class="dropdown">
                                     <div class="dropbtn">SPRZĘT  <i class="fas fa-chevron-down"></i></div>
                                         <div class="dropdown-content">
@@ -93,7 +99,11 @@
                         </nav>
                     </div>
                     <div class='location'>
-                        <p>Somewhere > Somewhere else </p>
+                        <a href="#">Strona główna</a>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#">Sprzęt</a>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#"><strong>Marker Tippmann FT-50 lite</strong></a>
                     </div>
                 </div>
             </div>
@@ -101,64 +111,106 @@
     </div>
     <div class='page'>
         <div class='mainProduct'>
-            <div class='productPhoto'>
-                    <div class='slider'>
-                        <ul>
-
-                        </ul>
-                    </div>
+            <div class='productPhotoContainer'>
+                    <img class="product-photo" src="./graphics/Marker Tippmann.jpg" alt="Product Image">
             </div>
             <div class='productOptions'>
-                <p>Tutaj będzie dużo opcji produktu</p>
+                    <h1 class="product-title">MARKER TIPPMAN FT-50 LITE 50 CAL RENTAL (BLACK)</h1>
+                    <div class="options-info">
+                        <div class="producer">
+                            <span>Producent:</span>
+                            <strong><a href="#" style='color: rgb(138, 68, 79)'>Dye</a></strong>
+                            </a>
+                        </div>
+                        <div class="code">
+                            <span>Kod produktu:</span>
+                            <span>6578758769878</span>
+                        </div>
+                 </div>
+                    <div class="product-status-shipping">
+                        <div class="product-status">
+                            <img src='./graphics/ok.png'>
+                            <div class="product-status-text">
+                                Dostępny na magazynie (14 szt.)
+                                <strong>Wysyłka dzisiaj</strong>
+                            </div>
+                        </div>
+                        <div class="product-shipping-info">
+                            <a href="#" title="Sprawdź czas i koszty wysyłki">
+                                <span  class="product-shipping-info-text">Sprawdź czas i koszty wysyłki</span>
+                            </a>
+                        </div>
+                    </div>
+                <div class="product-price-container">
+                    <div class="price">
+                        <span class="old-price">1499,00 zł</span>
+                        <span class="new-price">1278,00 zł</span>
+                    </div>
+                    <div class="quantity">
+                        <button class="quantity-btn" id="decrease-btn" onclick="decreaseQuantity()">-</button>
+                        <input class="quantity-number" id="quantity" value="1">
+                        <button class="quantity-btn" id="increase-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                    <button class="add-basket-btn" type="submit" title="Dodaj produkt do koszyka">
+                        Dodaj do koszyka
+                    </button>
+                </div>
+                <div class="negotiate-price">
+                    <div class="negotiate-img-container">
+                        <img class="negotiate-img" src=".\graphics\proj_negotiations.jpg">
+                    </div>
+                    <div class="negotiate-price-text">
+                        <strong>Znalazłeś ten produkt taniej?</strong>
+                        <span class="text-highlighted">Wynegocjuj dobrą cenę</span>
+                        <span class="text-highlighted" id="product-compare">Dodaj do porównania</span>
+                    </div>
+                </div>
             </div>
         </div>
-            <div class='productSuggestions'>
-                <h2>Dobierz do zestawu</h2>
-                <div class='additionalProducts'>
-                    <div class='product'>
-
-                    </div>
-                    <div class='product'>
-
-                    </div>
-                    <div class='product'>
-
-                    </div>
-                </div>
-            </div>
         <div class='midPage'> 
             <div class='midPageLeft'>
-                <div class='productInfo'>
-                    <p>Informacje o produkcie</p>
-                </div>
-                <div class='FAQ'>
-                    <h2>Nasi klienci pytali nas o</h2>
-                    <p>różne rzeczy</p>
+                <div class='product-info'>
+                    <h1>MARKER FIRMY TIPPMAN</h1>
+                    <p>stworzony z myślą o młodszych graczach poprzez zmniejszenie kalibru do 50Cal. FT-50 Lite wyglądem przypomina marker FT-12, jednak różni się on trochę od swojego pierwowzoru. Marker jest trochę krótszy, korpus ma bardziej agresywny charakter, średnica zewnętrzna oraz wewnętrzna lufy jest mniejsza oraz średnica otworu podającego kulki w magazynku grawitacyjnym jest dostosowana do kalibru 50Cal.</p>
+                    <br>
+                    <p>kompaktowy militarny wygląd</p>
+                    <p>szybkie serwisowanie bez użycia narzędzi</p>
+                    <p>aluminiowy chwyt i body</p>
+                    <p>wewnętrzny system gazowy "inline bolt system"</p>
+                    <p>modułowa konstrukcja</p>
+                    <p>słabe przyrządy celownicze</p>
+                    <p>Zestaw zawiera magazynek grawitacyjny oraz barrel bag (osłona lufy) </p>
                 </div>
             </div>
             <div class='midPageRight'>
-                <div id='banner'>
-                    <h1>Banner</h1>
-                    <p>Usługi serwisowe</p>
-                </div>
-            </div>
-        </div>
-        <div class='lowerPage'>
-            <h2>Porady naszego eksperta</h2>
-            <div class='articlesContainer'>
-                <div class='article'>
-                    <p>Artykuł 1</p>
-                </div>
-                <div class='article'>
-                    <p>Artykuł 2</p>
+                <div class='banner'>
+                    <div class='banner-img'>
+                            <img src="./graphics/maintenance-services.png">
+                    </div>
+                    <h3>Numer seryjny</h3>
+                    <p>111000</p>
+                    <h3>Model</h3>
+                    <p>TIPPMANN FT-50 LITE 50</p>
+                    <h3>Wykończenie</h3>
+                    <p>Czarny mat</p>
+                    <h3>Kaliber</h3>
+                    <p>66 LR HV</p>
+                    <h3>Pojemność magazynka</h3>
+                    <p>10 nabojów</p>
+                    <h3>Mechanizm spustowy</h3>
+                    <p>SA (Single Action)</p>
+                    <h3>Siła nacisku spustu</h3>
+                    <p>1.8 kg / 4 lb</p>
+                    <h3>Wymiary</h3>
+                    <p>1200x123mm</p>
                 </div>
             </div>
         </div>
     </div>
         <div class='footer'>
-            <p>Footer</p>
+            <img src="graphics/footer.png" alt="footer">
         </div>
-    <script src='.\jquery.min.js'></script>
+    <script src='./jquery.min.js'></script>
     <script src='script.js'></script>
 </body>
 </html>
